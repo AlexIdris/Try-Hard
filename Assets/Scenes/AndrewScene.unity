@@ -1949,8 +1949,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee911f18cf5dea45acb897224d38a32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  waitTime: 0.3
+  speed: 2
+  waitTime: 0.5
   turnSpeed: 100
   waypointHolder: {fileID: 1539866094}
 --- !u!1 &1923201946
