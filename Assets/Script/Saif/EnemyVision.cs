@@ -104,12 +104,16 @@ public class EnemyVision : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, targetWaypoint, speed * Time.deltaTime);
             if (transform.position == targetWaypoint)
             {
+                animEnemy.SetBool("Look", true);
                 targetWaypointIndex = (targetWaypointIndex + 1) % waypoints.Length;
                 targetWaypoint = waypoints[targetWaypointIndex];
                 yield return new WaitForSeconds(waitTime);
+                
                 yield return StartCoroutine(TurnToFace(targetWaypoint));
             }
             yield return null;
+            animEnemy.SetBool("Look", false);
+
         }
     }
 

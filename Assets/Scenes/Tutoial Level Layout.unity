@@ -46416,7 +46416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  waitTime: 0
+  waitTime: 6
   turnSpeed: 200
   timeToSpotPlayer: 0
   spotlight: {fileID: 2139479095}
