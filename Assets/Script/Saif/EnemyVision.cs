@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class EnemyVision : MonoBehaviour
 {
@@ -49,9 +46,8 @@ public class EnemyVision : MonoBehaviour
         if (CanSeePlayer())
         {
             playerVisibleTimer += Time.deltaTime;
-            //Enemy Chasing The Player, but doesn't Stop
-            //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.position - transform.position), turnSpeed * Time.deltaTime);
-            //transform.position += transform.forward * speed * Time.deltaTime;
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.position - transform.position), turnSpeed * Time.deltaTime);
+            transform.position += transform.forward * speed * Time.deltaTime;
 
         }
         else
@@ -108,7 +104,7 @@ public class EnemyVision : MonoBehaviour
                 targetWaypointIndex = (targetWaypointIndex + 1) % waypoints.Length;
                 targetWaypoint = waypoints[targetWaypointIndex];
                 yield return new WaitForSeconds(waitTime);
-                
+
                 yield return StartCoroutine(TurnToFace(targetWaypoint));
             }
             yield return null;
