@@ -14,6 +14,8 @@ public class EnemyVision : MonoBehaviour
     public float viewDistance;
     public LayerMask viewMask;
 
+    float originalSpeed;
+
     float viewAngle;
     float playerVisibleTimer;
 
@@ -28,7 +30,7 @@ public class EnemyVision : MonoBehaviour
         viewAngle = spotlight.spotAngle;
         originalSpotlightColour = spotlight.color;
         animEnemy = GetComponent<Animator>();
-
+        originalSpeed = speed;
         Vector3[] waypoints = new Vector3[pathHolder.childCount];
         for (int i = 0; i < waypoints.Length; i++)
         {
@@ -48,11 +50,14 @@ public class EnemyVision : MonoBehaviour
             playerVisibleTimer += Time.deltaTime;
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.position - transform.position), turnSpeed * Time.deltaTime);
             transform.position += transform.forward * speed * Time.deltaTime;
-
+            animEnemy.SetBool("PlayerInSight", true);
+            speed = 5;
         }
         else
         {
             playerVisibleTimer -= Time.deltaTime;
+            animEnemy.SetBool("PlayerInSight", false);
+            speed = originalSpeed;
         }
         playerVisibleTimer = Mathf.Clamp(playerVisibleTimer, 0, timeToSpotPlayer);
         spotlight.color = Color.Lerp(originalSpotlightColour, Color.red, playerVisibleTimer / timeToSpotPlayer);
