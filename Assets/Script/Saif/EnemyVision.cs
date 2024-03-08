@@ -6,6 +6,7 @@ public class EnemyVision : MonoBehaviour
     public static event System.Action OnGuardHasSpottedPlayer;
 
     public float speed = 5;
+    public float chaseSpeed = 1;
     public float waitTime = .3f;
     public float turnSpeed = 90;
     public float timeToSpotPlayer = .5f;
@@ -49,7 +50,7 @@ public class EnemyVision : MonoBehaviour
         {
             playerVisibleTimer += Time.deltaTime;
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.position - transform.position), turnSpeed * Time.deltaTime);
-            transform.position += transform.forward * speed * Time.deltaTime;
+            transform.position += transform.forward * chaseSpeed * Time.deltaTime;
             animEnemy.SetBool("PlayerInSight", true);
             speed = 5;
         }
