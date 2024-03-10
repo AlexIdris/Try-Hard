@@ -39,12 +39,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 735fd3feaf9a6664c907219593c835d8, type: 3}
+        m_Texture: {fileID: 2800000, guid: b8d8f0f13772c374d8d6354900c44e30, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _EmissionScaleUI: 1
+    - _GlossMapScale: 1
     m_Colors:
     - _EmissionColor: {r: 0.6155722, g: 0.6027962, b: 0.6027962, a: 1}
   m_BuildTextureStacks: []
