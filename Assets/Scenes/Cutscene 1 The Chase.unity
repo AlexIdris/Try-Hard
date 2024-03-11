@@ -607,6 +607,10 @@ PrefabInstance:
       value: 0.88871783
       objectReference: {fileID: 0}
     - target: {fileID: -4989844568282106962, guid: 14fdbd491abfa604cb1d8a17abbc59be, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300030, guid: b6ef2f4d0154b2747860a3332fa05f97, type: 3}
+    - target: {fileID: -4989844568282106962, guid: 14fdbd491abfa604cb1d8a17abbc59be, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 55f6a0b8244e31041b2090d13cb62319, type: 2}
@@ -988,7 +992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 14fdbd491abfa604cb1d8a17abbc59be, type: 3}
       propertyPath: m_Name
-      value: Orc NPC
+      value: ' NPC'
       objectReference: {fileID: 0}
     - target: {fileID: 1461819973945910757, guid: 14fdbd491abfa604cb1d8a17abbc59be, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2431,9 +2435,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.97735846, g: 0.89356416, b: 0.35959402, a: 1}
+  m_Color: {r: 0.97735846, g: 0.8, b: 0.40392157, a: 1}
   m_Intensity: 3
-  m_Range: 8
+  m_Range: 4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -3517,6 +3521,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.32487333
       objectReference: {fileID: 0}
+    - target: {fileID: -5733103574546722546, guid: ad784621d6daa89408360791d34b8145, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300052, guid: b6ef2f4d0154b2747860a3332fa05f97, type: 3}
     - target: {fileID: -5044496726641801913, guid: ad784621d6daa89408360791d34b8145, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3394746
@@ -6620,7 +6628,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.79938185, b: 0.40566033, a: 1}
   m_Intensity: 10
-  m_Range: 12
+  m_Range: 10
   m_SpotAngle: 177
   m_InnerSpotAngle: 1
   m_CookieSize: 10
@@ -6881,8 +6889,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.79938185, b: 0.40566033, a: 1}
-  m_Intensity: 10
-  m_Range: 12
+  m_Intensity: 3
+  m_Range: 10
   m_SpotAngle: 177
   m_InnerSpotAngle: 1
   m_CookieSize: 10
@@ -9311,7 +9319,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.8352941, g: 0.028602183, b: 0, a: 0.8627451}
+  m_Color: {r: 0.16862746, g: 0.039215688, b: 0, a: 0.8627451}
   m_Intensity: 50
   m_Range: 6
   m_SpotAngle: 74.13483
@@ -9767,7 +9775,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1256009509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10101,9 +10109,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.97735846, g: 0.89356416, b: 0.35959402, a: 1}
+  m_Color: {r: 0.97735846, g: 0.8, b: 0.40392157, a: 1}
   m_Intensity: 3
-  m_Range: 8
+  m_Range: 4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -10360,7 +10368,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 3
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
@@ -11353,9 +11361,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.97735846, g: 0.89356416, b: 0.35959402, a: 1}
+  m_Color: {r: 0.97735846, g: 0.8, b: 0.40392157, a: 1}
   m_Intensity: 3
-  m_Range: 8
+  m_Range: 4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -11890,6 +11898,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1585716506}
   - component: {fileID: 1585716507}
+  - component: {fileID: 1585716508}
   m_Layer: 0
   m_Name: Spot Light (5)
   m_TagString: Untagged
@@ -11925,7 +11934,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.79938185, b: 0.40566033, a: 1}
   m_Intensity: 10
-  m_Range: 12
+  m_Range: 10
   m_SpotAngle: 177
   m_InnerSpotAngle: 1
   m_CookieSize: 10
@@ -11974,6 +11983,18 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1585716508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585716505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6ed1eaee5dc6b048b995500c78b0c11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1593414329
 GameObject:
   m_ObjectHideFlags: 0
@@ -12894,7 +12915,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726941941}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -12907,7 +12928,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 5adbe226844458d4dbc9b7b4fcdb901b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13570,9 +13591,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.97735846, g: 0.89356416, b: 0.35959402, a: 1}
+  m_Color: {r: 0.97735846, g: 0.8, b: 0.40392157, a: 1}
   m_Intensity: 3
-  m_Range: 8
+  m_Range: 4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10

@@ -19,7 +19,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     [Header("Crouching")]
     public float crouchSpeed;
     public float crouchYScale;
-    private float startYScale;
+    public float startYScale;
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;

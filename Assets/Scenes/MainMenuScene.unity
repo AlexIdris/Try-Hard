@@ -1261,9 +1261,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.97735846, g: 0.89356416, b: 0.35959402, a: 1}
+  m_Color: {r: 1, g: 0.8, b: 0.40392157, a: 1}
   m_Intensity: 3
-  m_Range: 8
+  m_Range: 4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -3921,7 +3921,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.79938185, b: 0.40566033, a: 1}
   m_Intensity: 10
-  m_Range: 12
+  m_Range: 10
   m_SpotAngle: 177
   m_InnerSpotAngle: 1
   m_CookieSize: 10
@@ -4182,8 +4182,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.79938185, b: 0.40566033, a: 1}
-  m_Intensity: 10
-  m_Range: 12
+  m_Intensity: 3
+  m_Range: 10
   m_SpotAngle: 177
   m_InnerSpotAngle: 1
   m_CookieSize: 10
@@ -7383,9 +7383,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.97735846, g: 0.89356416, b: 0.35959402, a: 1}
+  m_Color: {r: 1, g: 0.8, b: 0.40392157, a: 1}
   m_Intensity: 3
-  m_Range: 8
+  m_Range: 4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -7699,7 +7699,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6c884e3068b12cf4f8ac9f1140964bf0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 06e5f9807913def41a19b3fe42123d82, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -7745,7 +7745,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -8572,9 +8572,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.97735846, g: 0.89356416, b: 0.35959402, a: 1}
+  m_Color: {r: 1, g: 0.8, b: 0.40392157, a: 1}
   m_Intensity: 3
-  m_Range: 8
+  m_Range: 4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -9247,7 +9247,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.79938185, b: 0.40566033, a: 1}
   m_Intensity: 10
-  m_Range: 12
+  m_Range: 10
   m_SpotAngle: 177
   m_InnerSpotAngle: 1
   m_CookieSize: 10
@@ -10797,9 +10797,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.97735846, g: 0.89356416, b: 0.35959402, a: 1}
+  m_Color: {r: 1, g: 0.8, b: 0.40392157, a: 1}
   m_Intensity: 3
-  m_Range: 8
+  m_Range: 4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10

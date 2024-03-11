@@ -15,6 +15,7 @@ public class EnemyVision : MonoBehaviour
     public float viewDistance;
     public LayerMask viewMask;
 
+
     float originalSpeed;
 
     float viewAngle;
@@ -48,6 +49,7 @@ public class EnemyVision : MonoBehaviour
         playerDistance = Vector3.Distance(player.transform.position, transform.position);
         if (CanSeePlayer())
         {
+
             playerVisibleTimer += Time.deltaTime;
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(player.position - transform.position), turnSpeed * Time.deltaTime);
             transform.position += transform.forward * chaseSpeed * Time.deltaTime;
@@ -65,9 +67,12 @@ public class EnemyVision : MonoBehaviour
 
         if (playerVisibleTimer >= timeToSpotPlayer)
         {
+            ;
             if (OnGuardHasSpottedPlayer != null)
             {
+
                 OnGuardHasSpottedPlayer();
+
             }
         }
     }
@@ -80,6 +85,7 @@ public class EnemyVision : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, player.position) < viewDistance)
         {
+
             Vector3 dirToPlayer = (player.position - transform.position).normalized;
             float angleBetweenGuardAndPlayer = Vector3.Angle(transform.forward, dirToPlayer);
             if (angleBetweenGuardAndPlayer < viewAngle / 2f)
