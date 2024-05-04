@@ -5,9 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class CutsceneTransition : MonoBehaviour
 {
-    void OnEnable()
+    public GameObject imageFading;
+
+    public void Start()
     {
-        // Only specifying the sceneName or sceneBuildIndex will load the Scene with the Single mode
-        SceneManager.LoadScene("Tutoial Level Layout", LoadSceneMode.Single);
+        imageFading.SetActive(true);
+    }
+    
+    public void PlayTheGame()
+    {
+        SceneManager.LoadScene("Tutoial Level Layout");
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PlayTheGame();
+        }
     }
 }
